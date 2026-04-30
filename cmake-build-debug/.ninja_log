@@ -1,0 +1,6 @@
+# ninja log v5
+4	709	7992917782752673	build.ninja	4608b949ae5b3c84
+3	4054	7992917827971288	CMakeFiles/Group_Project_1.dir/main.cpp.obj	cf427cecdce1641e
+4062	4529	7992917832678119	Group_Project_1.exe	c8e1f38031d31fb2
+7	1970	7992933469635388	CMakeFiles/Group_Project_1.dir/main.cpp.obj	cf427cecdce1641e
+1971	2431	7992933474242276	Group_Project_1.exe	c8e1f38031d31fb2

@@ -1,0 +1,42 @@
+DECLARATION
+DECLARATION
+BEGIN BLOCK
+DECLARATION
+ASSIGNMENT   name   '   Robert\x0   '   =
+ASSIGNMENT   announcement   "   You've got mail!\x0   "   =
+CALL   display_announcement   (   name   )
+END BLOCK
+DECLARATION
+BEGIN BLOCK
+DECLARATION
+DECLARATION
+DECLARATION
+ASSIGNMENT   found_null   FALSE   =
+ASSIGNMENT   num_bytes_before_null   0   =
+ASSIGNMENT   i   0   =
+WHILE   i   4096   <   found_null   !   &&
+BEGIN BLOCK
+IF   string   [   i   ]   '   \x0   '   ==
+BEGIN BLOCK
+ASSIGNMENT   found_null   TRUE   =
+END BLOCK
+ELSE
+BEGIN BLOCK
+ASSIGNMENT   num_bytes_before_null   num_bytes_before_null   1   +   =
+END BLOCK
+ASSIGNMENT   i   i   1   +   =
+END BLOCK
+RETURN   num_bytes_before_null   0   ==
+END BLOCK
+DECLARATION
+BEGIN BLOCK
+IF   empty_string   (   name   )   !
+BEGIN BLOCK
+PRINTF   Welcome, %s\n\n   name
+IF   empty_string   (   announcement   )   !
+BEGIN BLOCK
+PRINTF   %s\n   announcement
+END BLOCK
+END BLOCK
+END BLOCK
+

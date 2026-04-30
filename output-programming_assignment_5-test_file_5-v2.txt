@@ -1,0 +1,54 @@
+DECLARATION
+BEGIN BLOCK
+DECLARATION
+ASSIGNMENT   state   0   =
+IF   counter   3   %   0   ==
+BEGIN BLOCK
+ASSIGNMENT   state   1   =
+END BLOCK
+IF   counter   5   %   0   ==
+BEGIN BLOCK
+ASSIGNMENT   state   state   2   *   2   +   =
+END BLOCK
+IF   state   1   ==
+BEGIN BLOCK
+PRINTF   Fizz
+END BLOCK
+ELSE
+BEGIN BLOCK
+IF   state   2   ==
+BEGIN BLOCK
+PRINTF   Buzz
+END BLOCK
+ELSE
+BEGIN BLOCK
+IF   state   4   ==
+BEGIN BLOCK
+PRINTF   Fizzbuzz
+END BLOCK
+ELSE
+BEGIN BLOCK
+PRINTF   %d   counter
+END BLOCK
+END BLOCK
+END BLOCK
+END BLOCK
+DECLARATION
+BEGIN BLOCK
+DECLARATION
+ASSIGNMENT   counter   1   =
+WHILE   counter   100   <=
+BEGIN BLOCK
+CALL   fizzbuzz   (   counter   )
+ASSIGNMENT   counter   counter   1   +   =
+IF   counter   100   <=
+BEGIN BLOCK
+PRINTF   ,
+END BLOCK
+ELSE
+BEGIN BLOCK
+PRINTF   \n
+END BLOCK
+END BLOCK
+END BLOCK
+

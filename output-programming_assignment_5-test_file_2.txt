@@ -1,0 +1,50 @@
+DECLARATION
+BEGIN BLOCK
+DECLARATION
+DECLARATION
+ASSIGNMENT   digit   -1   =
+IF   hex_digit   '   0   '   >=   hex_digit   '   9   '   <=   &&
+BEGIN BLOCK
+ASSIGNMENT   digit   hex_digit   '   0   '   -   =
+END BLOCK
+ELSE
+BEGIN BLOCK
+IF   hex_digit   '   a   '   >=   hex_digit   '   f   '   <=   &&
+BEGIN BLOCK
+ASSIGNMENT   digit   hex_digit   '   a   '   -   10   +   =
+END BLOCK
+ELSE
+BEGIN BLOCK
+IF   hex_digit   '   A   '   >=   hex_digit   '   F   '   <=   &&
+BEGIN BLOCK
+ASSIGNMENT   digit   hex_digit   '   A   '   -   10   +   =
+END BLOCK
+END BLOCK
+END BLOCK
+RETURN   digit
+END BLOCK
+DECLARATION
+BEGIN BLOCK
+DECLARATION
+DECLARATION
+DECLARATION
+DECLARATION
+ASSIGNMENT   number   0   =
+ASSIGNMENT   hexnum   "   feed\x0   "   =
+ASSIGNMENT   digit   0   =
+FOR EXPRESSION 1   i   0   =
+FOR EXPRESSION 2   i   4   <   digit   -1   >   &&
+FOR EXPRESSION 3   i   i   1   +   =
+BEGIN BLOCK
+ASSIGNMENT   digit   hexdigit2int   (   hexnum   [   i   ]   )   =
+IF   digit   -1   >
+BEGIN BLOCK
+ASSIGNMENT   number   number   16   *   digit   +   =
+END BLOCK
+END BLOCK
+IF   digit   -1   >
+BEGIN BLOCK
+PRINTF   Hex: 0x%s is %d decimal\n   hexnum   number
+END BLOCK
+END BLOCK
+

@@ -1,0 +1,18 @@
+DECLARATION
+BEGIN BLOCK
+DECLARATION
+ASSIGNMENT   sum   0   =
+IF   n   1   >=
+BEGIN BLOCK
+ASSIGNMENT   sum   n   n   1   +   *   2   n   *   1   +   *   6   /   =
+END BLOCK
+RETURN   sum
+END BLOCK
+DECLARATION
+BEGIN BLOCK
+DECLARATION
+DECLARATION
+ASSIGNMENT   n   100   =
+ASSIGNMENT   sum   sum_of_first_n_squares   (   n   )   =
+PRINTF   sum of the squares of the first %d numbers = %d\n   n   sum
+END BLOCK
