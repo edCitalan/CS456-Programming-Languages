@@ -1,0 +1,18 @@
+# Makefile for CS 460 Assignment 5
+# Builds main.cpp into Group_Project_1
+
+CXX = g++
+CXXFLAGS = -Wall -Wextra -std=c++11
+TARGET = Group_Project_1
+SRC = main.cpp
+
+all $(TARGET)
+
+$(TARGET) $(SRC)
+	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC)
+
+clean
+	rm -f $(TARGET) .o
+
+run $(TARGET)
+	.$(TARGET) programming_assignment_5-test_file_1.c
