@@ -1,3 +1,0 @@
-C:/Users/paraj/OneDrive/Desktop/SPRING 2026/CS 460 programing languages/Assignment 6/cmake-build-debug/CMakeFiles/Assignment_6.dir
-C:/Users/paraj/OneDrive/Desktop/SPRING 2026/CS 460 programing languages/Assignment 6/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/paraj/OneDrive/Desktop/SPRING 2026/CS 460 programing languages/Assignment 6/cmake-build-debug/CMakeFiles/rebuild_cache.dir
